@@ -1,4 +1,10 @@
 
+defun xx (a b):
+      f. "QQQ ~A ~A" a b
+      ^ 100
+
+xx 11 22
+
 $/a \ 1(2 3)
   b 2
   c 3
