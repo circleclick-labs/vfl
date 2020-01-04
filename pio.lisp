@@ -19,7 +19,6 @@
 			 (let ((r (readx s))) (if     r
 						  (^. r (readm s x))))))
 (defun peekw (s)                                        (readw s) (peekc s))
-(defun peekl (s)                                        (readw s) (peekc s))
 (defun peeks (s)                                        (reads s) (peekc s))
 (defun peekn (s)                                        (reads s) (off   s))
 (defun readl (s) (hc (let* ((o n) (r (readx s)))
