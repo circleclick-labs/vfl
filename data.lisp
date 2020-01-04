@@ -1,4 +1,6 @@
-print 444
+
+:qwert
+
 defun xx (a b):
       f. "QQQ ~A ~A" a b
       ^ 100
@@ -9,10 +11,10 @@ $/a \ 1(2 3)
   b 2
   c 3
   d 41
-  @:print a
-    print b
-    print c
-    print d
+  @: print a
+     print b
+     print c
+     print d
 
 $ / a 1
     b 2
