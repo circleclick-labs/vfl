@@ -1,0 +1,8 @@
+(defvar ph (make-hash-table :test 'equal)) (define-symbol-macro p (gethash *load-truename* ph 0))
+(defvar nh (make-hash-table :test 'equal)) (define-symbol-macro n (gethash *load-truename* nh 1))
+(defun  off  (s)                                   (-   (fpos s)   p))
+(defun  snl  (s c d)  (if (== c #\lf) (setf n (+ n d) p (fpos s))) c)
+(defun peekc (s &optional c)      (peek-char               () s () c))
+(defun readc (s)           (snl s (read-char                  s) 1))
+(defun unrdc (s c)              (unread-char     (snl s c -1) s))
+(defun readp (s)                  (read-preserving-whitespace s))
