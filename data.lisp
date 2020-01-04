@@ -1,4 +1,4 @@
-
+print 444
 defun xx (a b):
       f. "QQQ ~A ~A" a b
       ^ 100
